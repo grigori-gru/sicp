@@ -34,5 +34,7 @@
 
 (check-equal? testPoint '(1 . 2))
 (check-equal? testSegment '(1 . 2) -5 . 10)
-(check-equal? (end-segment testSegment) '(-5 . 10))
-(check-equal? (midpoint-segment testSegment) '(-2 . 6))
+(check-equal? (end-segment testSegment) (make-point -5 10))
+(check-equal? (midpoint-segment testSegment) (make-point -2 6))
+
+(provide make-point make-segment midpoint-segment x-point y-point)
