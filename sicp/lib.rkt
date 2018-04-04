@@ -10,6 +10,9 @@
     (newline)
 )
 
+(define (avg a b)
+    (/ (+ a b) 2))
+
 (define (gcd a b)
     (if (= b 0)
         a
