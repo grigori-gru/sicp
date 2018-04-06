@@ -1,7 +1,7 @@
 #lang racket/base
 
 (require rackunit)
-(require "2.2.rkt")
+(require "02.rkt")
 
 (define (make-rectangle left-down right-up) (cons left-down right-up))
 
