@@ -1,5 +1,7 @@
 #lang racket/base
 
+; (require racket/trace)
+
 (provide (all-defined-out))
 
 (define (print-rat x)
@@ -19,4 +21,14 @@
         (gcd b (remainder a b))))
 
 (define (numer x) (car x))
+
 (define (denom x) (cdr x))
+
+(define (square x)
+    (* x x))
+
+(define (accumulate op initial sequence)
+    (if (null? sequence)
+        initial
+        (op (car sequence)
+            (accumulate op initial (cdr sequence)))))

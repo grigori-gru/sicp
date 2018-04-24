@@ -57,9 +57,6 @@
 (define branch4 (make-branch 11 mobile2))
 (define mobile3 (make-mobile branch3 branch4))
 
-(trace branch-structure)
-(trace branch-weight)
-
 (check-equal? (branch-weight branch1) 20)
 (check-equal? (total-weight mobile1) 29)
 (check-equal? (total-weight mobile2) 38)
