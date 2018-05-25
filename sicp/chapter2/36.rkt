@@ -14,3 +14,5 @@
 
 (trace accumulate-n)
 (check-equal? (accumulate-n + 0 tree) (list 22 26 30))
+
+(provide accumulate-n)
